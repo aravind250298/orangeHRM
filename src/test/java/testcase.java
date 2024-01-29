@@ -47,7 +47,7 @@ public class testcase {
     }
 
     @Test
-    public void applyLeave() throws IOException {
+    public void applyLeave() throws Exception {
 
         wait(By.name("username"));
         driver.findElement(By.name("username")).sendKeys("Admin");
@@ -60,6 +60,7 @@ public class testcase {
         driver.findElement(By.xpath("(//div[@class='oxd-checkbox-wrapper'])[2]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div[1]/div/div[9]/div/button[1]")).click();
         takeScreenshot("Apply_leave");
+        Thread.sleep(2000);
     }
 
     @AfterMethod
