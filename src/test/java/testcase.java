@@ -60,7 +60,7 @@ public class testcase {
         driver.findElement(By.xpath("(//div[@class='oxd-checkbox-wrapper'])[2]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/div[2]/div[1]/div/div[9]/div/button[1]")).click();
         takeScreenshot("Apply_leave");
-        System.out.prinln("wait for 2 seconds");
+        System.out.println("wait for 2 seconds");
         Thread.sleep(2000);
     }
 
